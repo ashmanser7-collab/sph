@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
             ? new URL(document.referrer).origin
             : null;
         // LIVE_VARIABLES
-        const LIVE_VARIABLES = new Set([['strength', 'distance_scaler', 'viscocity', 'smoothing_radius', 'gravity', 'timeStep', 'stepsPerRender', 'max_speed', 'rest_density', 'gas_constant', 'damping']]);
+        const LIVE_VARIABLES = new Set(['strength', 'distance_scaler', 'viscocity', 'smoothing_radius', 'gravity', 'timeStep', 'stepsPerRender', 'max_speed', 'rest_density', 'gas_constant', 'damping']);
 
         const sendToParent = message => {
             if (PARENT_ORIGIN) parent.postMessage(message, PARENT_ORIGIN);
