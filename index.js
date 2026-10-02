@@ -12203,6 +12203,8 @@ function get_max_speed() { return Module.max_speed; }
 function get_rest_density() { return Module.rest_density; }
 function get_gas_constant() { return Module.gas_constant; }
 function get_damping() { return Module.damping; }
+function get_width() { return Module.programWidth; }
+function get_height() { return Module.programHeight; }
 
 // Imports from the Wasm binary.
 var _stopProgram = Module['_stopProgram'] = makeInvalidEarlyAccess('_stopProgram');
@@ -12292,6 +12294,8 @@ var wasmImports = {
   /** @export */
   get_gravity,
   /** @export */
+  get_height,
+  /** @export */
   get_mass,
   /** @export */
   get_max_speed,
@@ -12309,6 +12313,8 @@ var wasmImports = {
   get_timeStep,
   /** @export */
   get_viscocity,
+  /** @export */
+  get_width,
   /** @export */
   glBegin: _glBegin,
   /** @export */

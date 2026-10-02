@@ -86,11 +86,23 @@ EM_JS(float, get_damping, (), {
 
 float damping = get_damping();
 
+
+
+EM_JS(float, get_width, (), {
+    return Module.programWidth;
+});
+
+int widthInitial = get_width();
+
+EM_JS(float, get_height, (), {
+    return Module.programHeight;
+});
+
+const int heightInitial = get_height();
+
 const double PI = 3.14159265358979323846; //For mouse distance 
 int frames = 0;
 
-const int widthInitial = 600;
-const int heightInitial = 600;
 int width = widthInitial;
 int height = heightInitial;
 
@@ -479,7 +491,6 @@ void main_loop() {
     glfwSwapBuffers(window);
     glfwPollEvents();
     frames++;
-    std::cout << "Frame: " << frames << "  time: " << frames*stepsPerRender*timeStep << "  particles: " << particles.size() << "\n";
 }
 
 int main() {
