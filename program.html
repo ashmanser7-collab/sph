@@ -30,19 +30,19 @@ body::-webkit-scrollbar {
         const height = Number(params.get("height")) || 600;
 
         // Variables
-        const  strength  = Number(params.get(" strength ")) ||  40000 ;
-        const  distance_scaler  = Number(params.get(" distance_scaler ")) ||  40 ;
-        const  viscocity  = Number(params.get(" viscocity ")) ||  10 ;
-        const  num_particles  = Number(params.get(" num_particles ")) ||  1000 ;
-        const  mass  = Number(params.get(" mass ")) ||  1 ;
-        const  smoothing_radius  = Number(params.get(" smoothing_radius ")) ||  16 ;
-        const  gravity  = Number(params.get(" gravity ")) ||  200 ;
-        const  timeStep  = Number(params.get(" timeStep ")) ||  0.005 ;
-        const  stepsPerRender  = Number(params.get(" stepsPerRender ")) || 1 ;
-        const  max_speed  = Number(params.get(" max_speed ")) ||  200 ;
-        const  rest_density  = Number(params.get(" rest_density ")) ||  8 ;
-        const  gas_constant  = Number(params.get(" gas_constant ")) ||  200 ;
-        const  damping  = Number(params.get(" damping ")) ||  0.6 ;
+        const  strength  = Number(params.get("strength")) ||  40000 ;
+        const  distance_scaler  = Number(params.get("distance_scaler")) ||  40 ;
+        const  viscocity  = Number(params.get("viscocity")) ||  10 ;
+        const  num_particles  = Number(params.get("num_particles")) ||  1000 ;
+        const  mass  = Number(params.get("mass")) ||  1 ;
+        const  smoothing_radius  = Number(params.get(" smoothing_radius")) ||  16 ;
+        const  gravity  = Number(params.get("gravity")) ||  200 ;
+        const  timeStep  = Number(params.get("timeStep")) ||  0.005 ;
+        const  stepsPerRender  = Number(params.get("stepsPerRender")) || 1 ;
+        const  max_speed  = Number(params.get("max_speed")) ||  200 ;
+        const  rest_density  = Number(params.get("rest_density")) ||  8 ;
+        const  gas_constant  = Number(params.get("gas_constant")) ||  200 ;
+        const  damping  = Number(params.get("damping")) ||  0.6 ;
 
         const canvas = document.getElementById("canvas");
         canvas.width = width;
